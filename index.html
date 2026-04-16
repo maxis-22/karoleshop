@@ -38,13 +38,13 @@
 </head>
 <body>
   <div class="container">
-    <h1>Enter the 6-digit code</h1>
+    <h1>Enter the 8-digit code</h1>
     <input type="text" id="codeInput" placeholder="Code" />
     <div id="result"></div>
   </div>
 
   <script>
-    const correctCode = "155555";
+    const correctCode = "15555555";
 
     const input = document.getElementById("codeInput");
     const result = document.getElementById("result");
@@ -52,7 +52,7 @@
     input.addEventListener("keydown", function(e) {
       if (e.key === "Enter") {
         if (input.value === correctCode) {
-          result.innerHTML = "Tu nuostabi! Patikrink, kur visada!";
+          result.innerHTML = "Tu nuostabi! Patikrink, ne kur visada, o atvirkščiai!";
           result.style.display = "block";
           input.disabled = true;
         } else {
